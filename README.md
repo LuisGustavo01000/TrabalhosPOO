@@ -1,25 +1,18 @@
-# Nome do projeto
+# Ecommerce 
 
-`CURSO: Sistemas de Informação`
+`CURSO: Analise e Desenvolvimento de Sistemas `
 
-`DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
-
-`Xº semestre/ANO`
-
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+Nosso projeto tem como objetivo a criação de uma aplicação web, buscando aplicar nossos conhecimentos, aprimorar nossas técnicas e incentivar o estudo e a especialização na área de Tecnologia da Informação. Além disso, essa iniciativa nos proporciona uma oportunidade de imersão nesse universo e no uso de novas ferramentas.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Gabriel Henrique 
+* Kauan Maia 
+* Luis Gustavo 
+* Manuela 
+* Wagner Teofilo
 
-## Professor
 
-* Nome completo do(a) professor(a)
 
 ## Instruções de utilização
 
