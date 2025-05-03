@@ -1,0 +1,58 @@
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.exe
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.deps.json
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.runtimeconfig.json
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.pdb
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.AssemblyInfoInputs.cache
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.AssemblyInfo.cs
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.csproj.CoreCompileInputs.cache
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\refint\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.pdb
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.genruntimeconfig.cache
+C:\Users\Luiz\Desktop\SimuladordePatos\SimuladordePatos\obj\Debug\net8.0\ref\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.exe
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.deps.json
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.runtimeconfig.json
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.pdb
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.AssemblyInfoInputs.cache
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.AssemblyInfo.cs
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.csproj.CoreCompileInputs.cache
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\refint\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.pdb
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.genruntimeconfig.cache
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\ref\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\POO\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.sourcelink.json
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.exe
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.deps.json
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.runtimeconfig.json
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.pdb
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.AssemblyInfoInputs.cache
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.AssemblyInfo.cs
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.csproj.CoreCompileInputs.cache
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.sourcelink.json
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\refint\SimuladordePatos.dll
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.pdb
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.genruntimeconfig.cache
+C:\Users\Luiz\Desktop\Nova pasta (2)\Repositorio-Luis-Gustavo\SimuladordePatos\obj\Debug\net8.0\ref\SimuladordePatos.dll
+C:\Users\pablo\Downloads\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.exe
+C:\Users\pablo\Downloads\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.deps.json
+C:\Users\pablo\Downloads\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.runtimeconfig.json
+C:\Users\pablo\Downloads\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.dll
+C:\Users\pablo\Downloads\SimuladordePatos\bin\Debug\net8.0\SimuladordePatos.pdb
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.AssemblyInfoInputs.cache
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.AssemblyInfo.cs
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.dll
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\refint\SimuladordePatos.dll
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.pdb
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\SimuladordePatos.genruntimeconfig.cache
+C:\Users\pablo\Downloads\SimuladordePatos\obj\Debug\net8.0\ref\SimuladordePatos.dll
