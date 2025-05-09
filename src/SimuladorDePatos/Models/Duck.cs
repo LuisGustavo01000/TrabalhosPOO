@@ -1,5 +1,7 @@
 ﻿namespace ProjetoPato.Models
 {
+ 
+    // Classe base na qual encapsula os comportamentos comuns dos patos
     public abstract class Duck
     {
 

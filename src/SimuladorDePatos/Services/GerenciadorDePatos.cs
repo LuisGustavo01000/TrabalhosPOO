@@ -6,16 +6,17 @@ namespace ProjetoPato.Services
 {
     public class GerenciadorDePatos
     {
+        // Lista que armazena todos os patos gerenciados
         private List<Duck> patos;
 
         public GerenciadorDePatos()
         {
-            // uma lista com todos os patos ja passando seu id e tipo
+            // Inicializa a lista de patos com instâncias de diferentes subclasses de Duck
             patos = new List<Duck>()
             {
                 new MallardDuck (1),
                 new MuteDuck (2),
-                new RedHeadDuck (3),  
+                new RedHeadDuck (3),
                 new RuberDuck (4),
                 new RocketDuck (5),
                 new SuperDuck (6),
@@ -28,15 +29,15 @@ namespace ProjetoPato.Services
         // Exibe a lista de patos disponíveis
         public void ExibirPatos()
         {
-            Console.WriteLine("Lista de Patos:");
             foreach (var pato in patos)
             {
-                Console.WriteLine($"ID: {pato.Id}, Tipo: {pato.Tipo}");
+                Console.WriteLine($" {pato.Id}, {pato.Tipo}");
             }
         }
-
+        // Método que retorna um pato com base no ID fornecido
         public Duck ObterPatoPorId(int id)
         {
+            // Busca o primeiro pato na lista cujo ID corresponde ao parâmetro
             return patos.Find(p => p.Id == id);
         }
 
