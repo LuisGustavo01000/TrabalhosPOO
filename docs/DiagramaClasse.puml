@@ -1,0 +1,123 @@
+@startuml
+title Diagrama de Classes - Simulador de Patos
+
+' Interfaces
+interface IFlyable {
+    +fly()
+}
+interface IQuackable {
+    +quack()
+}
+interface ISwinable {
+    +swin()
+}
+interface IDizzy {
+    +spin()
+}
+interface IDabbling {
+    +dabble()
+}
+interface IBroken {
+    +breaking()
+}
+
+' Classe base
+abstract class Duck {
+    +int Id
+    +string Tipo
+    +display()
+}
+
+' Subclasses de Duck
+class MallardDuck {
+    +fly()
+    +quack()
+    +swin()
+}
+class MuteDuck {
+    +fly()
+    +swin()
+}
+class RedHeadDuck {
+    +fly()
+    +quack()
+    +swin()
+}
+class RuberDuck {
+    +quack()
+    +swin()
+}
+class RocketDuck {
+    +fly()
+}
+class SuperDuck {
+    +fly()
+    +quack()
+    +swin()
+}
+class DuckLing {
+    +quack()
+    +swin()
+}
+class DizzyDuck {
+    +quack()
+    +spin()
+}
+class DecoyDuck {
+    +breaking()
+    +swin()
+}
+
+' Serviços
+class GerenciadorDePatos {
+    -List<Duck> patos
+    +ExibirPatos()
+    +ObterPatoPorId(int id)
+    +ObterPatoAleatorio(int idJogador)
+}
+class Menus {
+    -GerenciadorDePatos gerenciador
+    +Iniciar()
+}
+
+' Relações
+Duck <|-- MallardDuck
+Duck <|-- MuteDuck
+Duck <|-- RedHeadDuck
+Duck <|-- RuberDuck
+Duck <|-- RocketDuck
+Duck <|-- SuperDuck
+Duck <|-- DuckLing
+Duck <|-- DizzyDuck
+Duck <|-- DecoyDuck
+
+MallardDuck ..|> IFlyable
+MallardDuck ..|> IQuackable
+MallardDuck ..|> ISwinable
+
+MuteDuck ..|> IFlyable
+MuteDuck ..|> ISwinable
+
+RedHeadDuck ..|> IFlyable
+RedHeadDuck ..|> IQuackable
+RedHeadDuck ..|> ISwinable
+
+RuberDuck ..|> IQuackable
+RuberDuck ..|> ISwinable
+
+RocketDuck ..|> IFlyable
+
+SuperDuck ..|> IFlyable
+SuperDuck ..|> IQuackable
+SuperDuck ..|> ISwinable
+
+DuckLing ..|> IQuackable
+DuckLing ..|> ISwinable
+
+DizzyDuck ..|> IQuackable
+DizzyDuck ..|> IDizzy
+
+DecoyDuck ..|> IBroken
+DecoyDuck ..|> ISwinable
+
+@enduml

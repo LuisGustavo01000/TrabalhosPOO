@@ -16,6 +16,7 @@ namespace ProjetoPato.Services
         {
             int escolha = -1;
             bool escolhaValida = false;
+            RuberDuck r = new RuberDuck(33);
 
             while (!escolhaValida)
             {

@@ -8,7 +8,7 @@ namespace ProjetoPato.Models
     {
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Normal" em todas as instâncias, porém o id pode ser alterado */
-        public MallardDuck(int id) : base(id, "Pato Normal") { }
+        public MallardDuck(int id) : base(id, "Pato Selvagem") { }
 
         public void fly()
         {
