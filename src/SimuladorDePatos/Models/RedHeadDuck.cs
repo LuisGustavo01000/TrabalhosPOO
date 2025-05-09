@@ -5,11 +5,7 @@ namespace ProjetoPato.Models
     public class RedHeadDuck : Duck, IFlyable, IQuackable, ISwinable
     {
 
-        public RedHeadDuck(string tipo) : base(tipo)
-        {
-
-        }
-
+        public RedHeadDuck(int id) : base(id, "Pato Vermelho") { }
         public void fly()
         {
             Console.WriteLine("Eu consigo voar");

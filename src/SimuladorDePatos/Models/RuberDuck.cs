@@ -2,16 +2,17 @@
 
 namespace ProjetoPato.Models
 {
-    public class RuberDuck : Duck, IQuackable
+    public class RuberDuck : Duck, IQuackable, ISwinable
     {
 
-        public RuberDuck(string tipo) : base(tipo)
-        {
-
-        }
+        public RuberDuck(int id) : base(id, "Pato de Borracha") { }
         public void quack()
         {
             Console.WriteLine("Eu faço: quack quack");
+        }
+        public void swin()
+        {
+            Console.WriteLine("Eu boio na água");
         }
     }
 }

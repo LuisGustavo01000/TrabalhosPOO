@@ -5,10 +5,7 @@ namespace ProjetoPato.Models
     public class MuteDuck : Duck, IFlyable, ISwinable
     {
 
-        public MuteDuck(string tipo) : base(tipo)
-        {
-
-        }
+        public MuteDuck(int id) : base(id, "Pato Mudo") {}
 
         public void fly()
         {

@@ -4,7 +4,7 @@ namespace ProjetoPato.Models
 {
     public class DizzyDuck : Duck, IQuackable, IDizzy
     {
-        public DizzyDuck(string tipo) : base(tipo) { }
+        public DizzyDuck(int id) : base(id, "Pato Tonto") { }
         public void quack()
         {
             Console.WriteLine("Eu faço: quack... e fico tonto!");

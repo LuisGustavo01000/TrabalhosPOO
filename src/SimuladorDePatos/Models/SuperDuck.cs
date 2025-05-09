@@ -4,10 +4,7 @@ namespace ProjetoPato.Models
 {
     public class SuperDuck : Duck, IFlyable, IQuackable, ISwinable
     {
-        public SuperDuck(string tipo) : base(tipo)
-        {
-        }
-
+        public SuperDuck(int id) : base(id, "Super Pato"){ }
         public void fly()
         {
             Console.WriteLine("Eu consigo voar muito bem!!!");

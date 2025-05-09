@@ -2,10 +2,14 @@
 {
     public abstract class Duck
     {
-        protected string Tipo { get; set; }
-        protected Duck(string tipo)
+
+        public int Id { get; }
+        public string Tipo { get; }
+        public Duck(int id, string tipo)
         {
+            this.Id = id;
             this.Tipo = tipo;
+
         }
         public void display()
         {

@@ -4,10 +4,7 @@ namespace ProjetoPato.Models
 {
     public class MallardDuck : Duck, IFlyable, IQuackable, ISwinable
     {
-        public MallardDuck(string tipo) : base(tipo)
-        {
-        }
-
+        public MallardDuck(int id) : base(id, "Pato Normal") { }
         public void fly()
         {
             Console.WriteLine("Eu consigo voar");
