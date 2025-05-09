@@ -1,67 +1,86 @@
-# Trabalhos de POO
+# 🦆 Batalha dos Patos - Jogo de Console em C#
 
-`CURSO: Analise e Desenvolvimento de Sistemas `
+Um jogo de console simples e divertido, desenvolvido como projeto de estudo da disciplina de **Programação Orientada a Objetos (POO)**. O objetivo é aplicar os conceitos de **herança**, **interfaces** e **polimorfismo** através de uma batalha entre patos com habilidades especiais.
 
-Nosso projeto tem como objetivo a criação de uma aplicação web, buscando aplicar nossos conhecimentos, aprimorar nossas técnicas e incentivar o estudo e a especialização na área de Tecnologia da Informação. Além disso, essa iniciativa nos proporciona uma oportunidade de imersão nesse universo e no uso de novas ferramentas.
+---
 
-## Integrantes
+## 📚 Objetivo do Projeto
 
-* Gabriel Henrique 
-* Kauan Maia 
-* Luis Gustavo 
-* Manuela 
-* Wagner Teofilo
+Criar um jogo baseado em turnos onde o jogador escolhe um **pato lutador**, cada um com **atributos únicos** e **habilidades especiais**, para enfrentar um pato inimigo controlado pela máquina. Ganha quem reduzir a vida do oponente a **0 pontos**.
 
+---
 
+## 🛠️ Conceitos Aplicados
 
-## Instruções de utilização
+- ✅ Herança
+- ✅ Interface
+- ✅ Polimorfismo
+- ✅ Encapsulamento
+- ✅ Estrutura modular de código
+- ✅ Diagrama de Classes UML
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+---
 
-Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+## 🎮 Como Jogar (em breve)
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+> ⚠️ A funcionalidade de batalha ainda está em desenvolvimento.
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+1. O jogador verá uma lista de patos disponíveis com seus atributos e habilidades.
+2. Um pato será escolhido para a batalha.
+3. A máquina escolherá um pato aleatoriamente.
+4. A batalha ocorre por turnos (em desenvolvimento).
 
-# Documentação
+---
 
-<ol>
-<li><a href="docs/01-Contexto.md"> Documentação de contexto</a></li>
-<li><a href="docs/02-Product-discovery.md"> Product discovery</a></li>
-<li><a href="docs/03-Product-design.md"> Product design</a></li>
-<li><a href="docs/04-Metodologia.md"> Metodologia</a></li>
-<li><a href="docs/05-Projeto-interface.md"> Projeto de interface</a></li>
-<li><a href="docs/06-Template-padrao.md"> Template padrão da aplicação</a></li>
-<li><a href="docs/07-Arquitetura-solucao.md"> Arquitetura da solução</a></li>
-<li><a href="docs/08-Plano-testes-software.md"> Plano de testes de software</a></li>
-<li><a href="docs/09-Registro-testes-software.md"> Registro de testes de software</a></li>
-<li><a href="docs/10-Referencias.md"> Referências</a></li>
-</ol>
+## 📁 Organização de Pastas
 
-# Código
+```plaintext
+/TrabalhosPOO/
+├── /src/               # Código-fonte do jogo
+│   ├── Program.cs      # Ponto de entrada do programa
+│   ├── /Models/        # Classes principais (Pato, tipos de pato)
+│   ├── /Interfaces/    # Interfaces como IHabilidade
+│   └── /Services/      # Lógica de jogo (turnos, batalha, etc)
+├── /docs/              # Documentação e diagramas
+│   └── DiagramaClasse.png
+├── README.md           # Documentação do projeto
+└──.gitignore
 
-* <a href="src/README.md">Código</a>
+---
 
-# Apresentação
+## Diagrama de Classes
 
-* <a href="presentation/README.md">Apresentação do projeto</a>
+(Imagem disponível em `docs/DiagramaClasse.png`)
 
-## Dicas 
+---
 
-> **IMPORTANTE: APAGUE ESTA SEÇÃO DE DICAS ANTES DE ENTREGAR SEU TRABALHO**
+## Próximas Etapas
 
-No desenvolvimento deste trabalho, o grupo deverá utilizar este repositório como local para entrega de todos os artefatos a serem produzidos. Em especial, o grupo deverá providenciar a alteração dos seguintes arquivos:
+- [x] Criar estrutura base com herança e interface
+- [ ] Exibir lista de patos e seus atributos no console
+- [ ] Implementar sistema de turnos
+- [ ] Adicionar efeitos das habilidades
+- [ ] Finalizar lógica de vitória/derrota
 
-* **Capa do projeto** (Este arquivo aqui): informação básica sobre o projeto, alunos do grupo e professores responsáveis;
-* **Arquivo CITATION.cff**: utilizado para referenciar o projeto;
-* **Pasta docs**: documentação completa do projeto;
-* **Pasta presentation**: apresentação do projeto;
-* **Pasta src**: todos os arquivos resultantes da programação do software;
-* **Pasta templates**: templates de arquivos úteis ao longo desta disciplina. Essa pasta deve ser removida antes da entrega da versão final do trabalho.
+---
 
-Toda a documentação do projeto é realizado por meio do Markdown, uma linguagem de formatação adotada pelo GitHub e por diversas outras plataformas. Aprenda Markdown e use-o para documentar o projeto.
+## Créditos
 
-> **Links úteis**:
-> - [Sintaxe básica de gravação e formatação no GitHub - GitHub Docs](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-> - [Markdown® Básico: Sintaxe, Uso &amp; Exemplos [Passo a Passo]](https://markdown.net.br/sintaxe-basica/)
+Projeto criado por Luis Gustavo, Pablo Marques e Thiago Guilherme para a disciplina de Programação Orientada a Objetos - 3º Período ADS.
+
+---
+
+## Requisitos
+
+- .NET SDK 6.0 ou superior
+- Visual Studio ou VS Code
+- Terminal de console (cmd, bash, etc)
+
+---
+
+## Como Rodar
+
+- git clone https://github.com/LuisGustavo01000/TrabalhosPOO.git
+- cd batalha-dos-patos
+- dotnet run
+
