@@ -10,13 +10,17 @@ namespace ProjetoPato.Models
         O tipo de pato é definido como "Pato Foguete" em todas as instâncias, porém o id pode ser alterado */
         public RocketDuck(int id) : base(id, "Pato Foguete")
         {
-            HabilidadesList.Add("Fly");
+            HabilidadesList.Add("1 - Fly");
         }
 
 
         public void fly()
         {
-            Console.WriteLine("Eu voo na velocidade da Luz e sou muito rápido kkkkk");
+            Console.WriteLine("Parece um foguete no céu");
+        }
+        public void spin()
+        {
+            Console.WriteLine("Voou tao rapido que ficou tonto");
         }
     }
 }

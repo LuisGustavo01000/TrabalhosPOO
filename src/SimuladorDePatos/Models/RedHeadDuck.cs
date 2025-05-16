@@ -4,7 +4,7 @@ namespace ProjetoPato.Models
 {
     /* A subclasse RedHeadDuck herda da classe Duck os comportamentos padrões de patos
     E implementa os comportamentos específicos de um pato vermelho */
-    public class RedHeadDuck : Duck, IFlyable, IQuackable, ISwinable
+    public class RedHeadDuck : Duck, IFlyable, IQuackable, ISwimable
     {
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Vermelho" em todas as instâncias, porém o id pode ser alterado */
@@ -12,23 +12,23 @@ namespace ProjetoPato.Models
         {
             HabilidadesList.Add("Fly");
             HabilidadesList.Add("Quack");
-            HabilidadesList.Add("Swin");
+            HabilidadesList.Add("Swim");
         }
 
         public void fly()
         {
-            Console.WriteLine("Eu consigo voar");
+            Console.WriteLine("Parece um raio vermelho cortando o céu  ");
         }
 
         
         public void quack()
         {
-            Console.WriteLine("Eu faço: quack quack");
+            Console.WriteLine("Um quaaaaaack imponente");
         }
 
-        public void swin()
+        public void swim()
         {
-            Console.WriteLine("Eu sei nadar");
+            Console.WriteLine("Parece um tambaqui nadando");
         }
     }
 }

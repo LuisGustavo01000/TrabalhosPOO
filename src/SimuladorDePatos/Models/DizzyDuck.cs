@@ -17,11 +17,11 @@ namespace ProjetoPato.Models
 
         public void quack()
         {
-            Console.WriteLine("Eu faço: quack... e fico tonto!");
+            Console.WriteLine("QuaAaAaCK ele grita girando");
         }
         public void spin()
         {
-            Console.WriteLine("Estou girando! Estou tonto!");
+            Console.WriteLine("Rodando e dando soco para todo lado");
         }
     }
 }

@@ -4,7 +4,7 @@ namespace ProjetoPato.Models
 {
     /* A subclasse RuberDuck herda da classe Duck os comportamentos padrões de patos
     E implementa os comportamentos específicos de um pato de borracha */
-    public class RuberDuck : Duck, IQuackable, ISwinable
+    public class RuberDuck : Duck, IQuackable, ISwimable
     {
 
 
@@ -13,18 +13,18 @@ namespace ProjetoPato.Models
         O tipo de pato é definido como "Pato de Borracha" em todas as instâncias, porém o id pode ser alterado */
         public RuberDuck(int id) : base(id, "Pato de Borracha")
         {
-            HabilidadesList.Add("Swin");
+            HabilidadesList.Add("Swim");
             HabilidadesList.Add("Quack");
         }
 
         public void quack()
         {
-            Console.WriteLine("Eu faço: quack quack");
+            Console.WriteLine("Quack quack quack, um som insuportavel");
         }
 
-        public void swin()
+        public void swim()
         {
-            Console.WriteLine("Eu boio na água");
+            Console.WriteLine("Ele boia e como um pato de borracha");
         }
     }
 }

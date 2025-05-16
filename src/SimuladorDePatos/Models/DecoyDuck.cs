@@ -4,24 +4,24 @@ namespace ProjetoPato.Models
 {
     /* A subclasse DecoyDuck herda da classe Duck os comportamentos padrões de patos
     E implementa os comportamentos específicos de um pato de madeira */
-    public class DecoyDuck : Duck, IBroken, ISwinable
+    public class DecoyDuck : Duck, IBroken, ISwimable
     {
 
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato de Madeira" em todas as instacias, porem o id pode ser alterado*/
         public DecoyDuck(int id) : base(id, "Pato de Madeira")
         {
-            HabilidadesList.Add("Swin");
+            HabilidadesList.Add("Swim");
             HabilidadesList.Add("Breaking");
         }
 
         public void breaking()
         {
-            Console.WriteLine("Ops! Você me derrubou e eu quebrei, sou só um pato de madeira.");
+            Console.WriteLine("Ele endurece suas penas como se fosse de madeira");
         }
-        public void swin()
+        public void swim()
         {
-            Console.WriteLine("Eu não nado, sou só um pato de madeira mas boio na água.");
+            Console.WriteLine("Ele nada como se fosse um tronco de uma arvore boiando");
         }
 
     }

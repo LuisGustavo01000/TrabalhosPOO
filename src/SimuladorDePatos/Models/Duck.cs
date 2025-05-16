@@ -8,7 +8,11 @@
         public int Id { get; }
         public string Tipo { get; }
 
-        protected List<string> HabilidadesList { get; } = new List<string>();
+        // Lista abstrata com as habilidades dos patos que sera preenchida no construtor das subclasses
+        public List<string> HabilidadesList { get; } = new List<string>();
+
+
+
         public Duck(int id, string tipo)
         {
             this.Id = id;
@@ -19,11 +23,12 @@
             Console.WriteLine($"\nO meu tipo de pato e: {Tipo}");
         }
 
+        // Método virtual que exibira as habilidades dos patos de acordo com o pato selecionado
         public virtual void Habilidades()
         {
-            foreach (var habilidade in HabilidadesList)
+            for (int i = 0; i < HabilidadesList.Count; i++) 
             {
-                Console.WriteLine(habilidade);
+                Console.WriteLine($" {i + 1} - {HabilidadesList[i]}");
             }
         }
 

@@ -4,7 +4,7 @@ namespace ProjetoPato.Models
 {
     /* A subclasse MallardDuck herda da classe Duck os comportamentos padrões de patos
     E implementa os comportamentos específicos de um pato normal */
-    public class MallardDuck : Duck, IFlyable, IQuackable, ISwinable
+    public class MallardDuck : Duck, IFlyable, IQuackable, ISwimable
     {
 
 
@@ -12,24 +12,24 @@ namespace ProjetoPato.Models
         O tipo de pato é definido como "Pato Normal" em todas as instâncias, porém o id pode ser alterado */
         public MallardDuck(int id) : base(id, "Pato Selvagem")
         {
-            HabilidadesList.Add("Swin");
+            HabilidadesList.Add("Swim");
             HabilidadesList.Add("Fly");
             HabilidadesList.Add("Quack");
         }
 
         public void fly()
         {
-            Console.WriteLine("Eu consigo voar");
+            Console.WriteLine("Voa de uma maneira estranha mas muito rapida");
         }
         
         public void quack()
         {
-            Console.WriteLine("Eu faço: quack quack");
+            Console.WriteLine("Um quaaaaack que voce escuta ao adentrar uma floresta");
         }
        
-        public void swin()
+        public void swim()
         {
-            Console.WriteLine("Eu sei nadar");
+            Console.WriteLine("Nada sem rumo mas muito rapido");
         }
     }
 }

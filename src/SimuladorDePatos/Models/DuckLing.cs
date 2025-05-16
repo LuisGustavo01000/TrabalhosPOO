@@ -4,23 +4,23 @@ namespace ProjetoPato.Models
 {
     /* A subclasse DuckLing herda da classe Duck os comportamentos padrões de patos
     E implementa os comportamentos específicos de um pato filhote */
-    public class DuckLing : Duck, IQuackable, ISwinable
+    public class DuckLing : Duck, IQuackable, ISwimable
     {
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Filhote" em todas as instâncias, porém o id pode ser alterado */
         public DuckLing(int id) : base(id, "Pato Filhote")
         {
-             HabilidadesList.Add("Swin");
+             HabilidadesList.Add("Swim");
              HabilidadesList.Add("Quack");
         }
         public void quack()
         {
-            Console.WriteLine("Eu tento fazer: quack quack, mas faço piu piu...");
+            Console.WriteLine("Um quack com lingua presa igual do patolino");
         }
 
-        public void swin()
+        public void swim()
         {
-            Console.WriteLine("Eu sei nadar, mas ainda estou aprendendo...");
+            Console.WriteLine("Nada de maneira desengonçada");
         }
     }
 }

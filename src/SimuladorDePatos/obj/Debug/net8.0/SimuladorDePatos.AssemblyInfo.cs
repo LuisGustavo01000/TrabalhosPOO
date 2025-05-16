@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimuladorDePatos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f942b37f51f954b9d9c7ae3bb577098a692bc498")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82cf289382257996e23b82ac618ae6a2d1a8481f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimuladorDePatos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimuladorDePatos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

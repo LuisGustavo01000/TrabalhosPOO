@@ -4,7 +4,7 @@ namespace ProjetoPato.Models
 {
     /* A subclasse SuperDuck herda da classe Duck os comportamentos padrões de patos
     E implementa os comportamentos específicos de um super pato */
-    public class SuperDuck : Duck, IFlyable, IQuackable, ISwinable
+    public class SuperDuck : Duck, IFlyable, IQuackable, ISwimable
     {
 
         /* Construtor que recebe o id do pato e o tipo de pato
@@ -13,22 +13,22 @@ namespace ProjetoPato.Models
         {
             HabilidadesList.Add("Fly");
             HabilidadesList.Add("Quack");
-            HabilidadesList.Add("Swin");
+            HabilidadesList.Add("Swim");
         }
 
         public void fly()
         {
-            Console.WriteLine("Eu consigo voar muito bem!!!");
+            Console.WriteLine("Zummmm o pato voa como um super homem");
         }
 
         public void quack()
         {
-            Console.WriteLine("Eu faço: quack quack, com uma velocidade e força muito boa kkkk");
+            Console.WriteLine("Quaaaaaaaaaaaaaaaack um super grito que explode os timpanos");
         }
 
-        public void swin()
+        public void swim()
         {
-            Console.WriteLine("Eu sei nadar, como um tubarão, como um peixe e ainda sou rápido");
+            Console.WriteLine("Uma nadada na velocidade da luz");
         }
     }
 }
