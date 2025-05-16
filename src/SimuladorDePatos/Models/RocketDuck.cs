@@ -8,7 +8,10 @@ namespace ProjetoPato.Models
     {
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Foguete" em todas as instâncias, porém o id pode ser alterado */
-        public RocketDuck(int id) : base(id, "Pato Foguete") { }
+        public RocketDuck(int id) : base(id, "Pato Foguete")
+        {
+            HabilidadesList.Add("Fly");
+        }
 
 
         public void fly()

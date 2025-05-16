@@ -38,7 +38,9 @@ namespace ProjetoPato.Services
         public Duck ObterPatoPorId(int id)
         {
             // Busca o primeiro pato na lista cujo ID corresponde ao parâmetro
-            return patos.Find(p => p.Id == id);
+            Duck patoSelecionado = patos.Find(p => p.Id == id);
+
+            return patoSelecionado;
         }
 
         // Método para obter um pato aleatório, exceto o pato do jogador

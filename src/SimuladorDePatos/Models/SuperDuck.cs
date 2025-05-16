@@ -6,9 +6,15 @@ namespace ProjetoPato.Models
     E implementa os comportamentos específicos de um super pato */
     public class SuperDuck : Duck, IFlyable, IQuackable, ISwinable
     {
+
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Super Pato" em todas as instâncias, porém o id pode ser alterado */
-        public SuperDuck(int id) : base(id, "Super Pato") { }
+        public SuperDuck(int id) : base(id, "Super Pato")
+        {
+            HabilidadesList.Add("Fly");
+            HabilidadesList.Add("Quack");
+            HabilidadesList.Add("Swin");
+        }
 
         public void fly()
         {

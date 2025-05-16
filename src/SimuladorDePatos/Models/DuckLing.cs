@@ -8,7 +8,11 @@ namespace ProjetoPato.Models
     {
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Filhote" em todas as instâncias, porém o id pode ser alterado */
-        public DuckLing(int id) : base(id, "Pato Filhote") { }
+        public DuckLing(int id) : base(id, "Pato Filhote")
+        {
+             HabilidadesList.Add("Swin");
+             HabilidadesList.Add("Quack");
+        }
         public void quack()
         {
             Console.WriteLine("Eu tento fazer: quack quack, mas faço piu piu...");

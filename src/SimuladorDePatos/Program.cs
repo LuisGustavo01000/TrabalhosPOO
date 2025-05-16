@@ -1,4 +1,6 @@
 ﻿using ProjetoPato.Services; 
+using ProjetoPato.Models;
+using ProjetoPato.Interfaces;
 using System;
 
 namespace ProjetoPato

@@ -9,7 +9,11 @@ namespace ProjetoPato.Models
 
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato de Madeira" em todas as instacias, porem o id pode ser alterado*/
-        public DecoyDuck(int id) : base(id, "Pato de Madeira") { }
+        public DecoyDuck(int id) : base(id, "Pato de Madeira")
+        {
+            HabilidadesList.Add("Swin");
+            HabilidadesList.Add("Breaking");
+        }
 
         public void breaking()
         {
@@ -19,6 +23,7 @@ namespace ProjetoPato.Models
         {
             Console.WriteLine("Eu não nado, sou só um pato de madeira mas boio na água.");
         }
+
     }
 }
 

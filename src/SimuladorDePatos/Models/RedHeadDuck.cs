@@ -8,7 +8,12 @@ namespace ProjetoPato.Models
     {
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Vermelho" em todas as instâncias, porém o id pode ser alterado */
-        public RedHeadDuck(int id) : base(id, "Pato Vermelho") { }
+        public RedHeadDuck(int id) : base(id, "Pato Vermelho")
+        {
+            HabilidadesList.Add("Fly");
+            HabilidadesList.Add("Quack");
+            HabilidadesList.Add("Swin");
+        }
 
         public void fly()
         {

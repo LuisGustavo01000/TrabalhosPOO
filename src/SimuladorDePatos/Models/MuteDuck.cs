@@ -8,7 +8,11 @@ namespace ProjetoPato.Models
     {
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Mudo" em todas as instâncias, porém o id pode ser alterado */
-        public MuteDuck(int id) : base(id, "Pato Mudo") { }
+        public MuteDuck(int id) : base(id, "Pato Mudo")
+        {
+            HabilidadesList.Add("Swin");
+            HabilidadesList.Add("Fly");
+        }
 
         
         public void fly()

@@ -6,9 +6,16 @@ namespace ProjetoPato.Models
     E implementa os comportamentos específicos de um pato normal */
     public class MallardDuck : Duck, IFlyable, IQuackable, ISwinable
     {
+
+
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Normal" em todas as instâncias, porém o id pode ser alterado */
-        public MallardDuck(int id) : base(id, "Pato Selvagem") { }
+        public MallardDuck(int id) : base(id, "Pato Selvagem")
+        {
+            HabilidadesList.Add("Swin");
+            HabilidadesList.Add("Fly");
+            HabilidadesList.Add("Quack");
+        }
 
         public void fly()
         {

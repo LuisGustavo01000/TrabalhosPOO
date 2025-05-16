@@ -25,12 +25,14 @@ namespace ProjetoPato.Services
                 gerenciador.ExibirPatos();
                 Console.Write("Digite sua escolha: ");
 
-                string entrada = Console.ReadLine();
+                string entrada = Console.ReadLine()!;
 
                 // Valida a entrada do usuário
                 if(int.TryParse (entrada, out escolha) && escolha >= 1 && escolha <= 9)
                 {
-                    escolhaValida = true;
+                    
+                    bool confirmar = false;
+                    int confirmarEscolha = -1;
 
                     // Obtém o pato escolhido e um pato aleatório como inimigo
                     Duck jogador = gerenciador.ObterPatoPorId(escolha);
@@ -38,6 +40,36 @@ namespace ProjetoPato.Services
 
                     // Exibe os patos selecionados
                     Console.WriteLine($"\nVocê escolheu: {jogador.Tipo}");
+                    
+                    // exibir as interfaces implementadas pelo pato escolhido
+                    Console.WriteLine("Características do pato escolhido:");
+                    var interfaces = jogador.GetType().GetInterfaces();
+                    foreach (var i in interfaces)
+                    {
+                        Console.WriteLine($"- {i.Name}");
+                    }
+                    while (!confirmar)
+                    {
+                        // Pergunta se o usuário deseja confirmar a escolha
+                        Console.WriteLine($"\nDeseja confirmar sua escolha? (1 - Sim, 2 - Não): ");
+                        string entradaConfirmacao = Console.ReadLine();
+
+                        // Valida a entrada de confirmação
+                        if (int.TryParse(entradaConfirmacao, out confirmarEscolha) && (confirmarEscolha == 1 ))
+                        {
+                            confirmar = true;
+                            escolhaValida = true;
+                        }else if (confirmarEscolha == 2)
+                        {
+                            Console.WriteLine("Escolha um pato novamente.");
+                            confirmar = true;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Escolha inválida. Tente novamente.");
+                        }
+                    }
+
                     Console.WriteLine($"\nInimigo escolhido: {inimigo.Tipo}");
                     Console.WriteLine($"\n🚧  Batalha em construção 🚧\n");
                 }

@@ -8,7 +8,11 @@ namespace ProjetoPato.Models
     {
         /* Construtor que recebe o id do pato e o tipo de pato
         O tipo de pato é definido como "Pato Tonto" em todas as instâncias, porém o id pode ser alterado */
-        public DizzyDuck(int id) : base(id, "Pato Tonto") { }
+        public DizzyDuck(int id) : base(id, "Pato Tonto")
+        {
+             HabilidadesList.Add("Quack");
+             HabilidadesList.Add("Spin");
+        }
 
 
         public void quack()

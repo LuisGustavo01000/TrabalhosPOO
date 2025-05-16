@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pablo\\iCloudDrive\\Faculdade\\AQUI\\TrabalhosPOO\\src\\SimuladorDePatos\\SimuladorDePatos.csproj",
+      "projectUniqueName": "C:\\Users\\pablo\\iCloudDrive\\Faculdade\\GITHUB PROJECTS\\TrabalhosPOO\\src\\SimuladorDePatos\\SimuladorDePatos.csproj",
       "projectName": "SimuladorDePatos",
-      "projectPath": "C:\\Users\\pablo\\iCloudDrive\\Faculdade\\AQUI\\TrabalhosPOO\\src\\SimuladorDePatos\\SimuladorDePatos.csproj",
+      "projectPath": "C:\\Users\\pablo\\iCloudDrive\\Faculdade\\GITHUB PROJECTS\\TrabalhosPOO\\src\\SimuladorDePatos\\SimuladorDePatos.csproj",
       "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pablo\\iCloudDrive\\Faculdade\\AQUI\\TrabalhosPOO\\src\\SimuladorDePatos\\obj\\",
+      "outputPath": "C:\\Users\\pablo\\iCloudDrive\\Faculdade\\GITHUB PROJECTS\\TrabalhosPOO\\src\\SimuladorDePatos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
