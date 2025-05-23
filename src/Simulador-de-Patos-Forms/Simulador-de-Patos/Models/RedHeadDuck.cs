@@ -16,20 +16,19 @@ namespace ProjetoPato.Models
             HabilidadesList.Add("Swim");
         }
 
-        public void fly()
+        public string fly()
         {
-            Console.WriteLine("Parece um raio vermelho cortando o céu  ");
+            return "Parece um raio vermelho cortando o céu  ";
         }
 
-        
-        public void quack()
+        public string quack()
         {
-            Console.WriteLine("Um quaaaaaack imponente");
+            return "Um quaaaaaack imponente";
         }
 
-        public void swim()
+        public string swim()
         {
-            Console.WriteLine("Parece um tambaqui nadando");
+            return "Parece um tambaqui nadando";
         }
     }
 }

@@ -17,19 +17,19 @@ namespace ProjetoPato.Models
             HabilidadesList.Add("Swim");
         }
 
-        public void fly()
+        public string fly()
         {
-            Console.WriteLine("Zummmm o pato voa como um super homem");
+            return "Zummmm o pato voa como um super homem";
         }
 
-        public void quack()
+        public string quack()
         {
-            Console.WriteLine("Quaaaaaaaaaaaaaaaack um super grito que explode os timpanos");
+            return "Quaaaaaaaaaaaaaaaack um super grito que explode os timpanos";
         }
 
-        public void swim()
+        public string swim()
         {
-            Console.WriteLine("Uma nadada na velocidade da luz");
+            return "Uma nadada na velocidade da luz";
         }
     }
 }

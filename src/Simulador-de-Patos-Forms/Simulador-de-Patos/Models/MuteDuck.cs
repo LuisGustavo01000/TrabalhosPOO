@@ -16,14 +16,14 @@ namespace ProjetoPato.Models
         }
 
         
-        public void fly()
+        public string fly()
         {
-            Console.WriteLine("Vooa silenciosamente");
+            return "Vooa silenciosamente";
         }
         
-        public void swim()
+        public string swim()
         {
-            Console.WriteLine("Nada tao imperceptivelmente que parece uma agua viva");
+            return "Nada tao imperceptivelmente que parece uma agua viva";
         }
     }
 }

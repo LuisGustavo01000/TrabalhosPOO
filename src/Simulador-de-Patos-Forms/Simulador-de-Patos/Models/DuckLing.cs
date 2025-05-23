@@ -14,14 +14,14 @@ namespace ProjetoPato.Models
              HabilidadesList.Add("Swim");
              HabilidadesList.Add("Quack");
         }
-        public void quack()
+        public string quack()
         {
-            Console.WriteLine("Um quack com lingua presa igual do patolino");
+            return "Um quack com lingua presa igual do patolino";
         }
 
-        public void swim()
+        public string swim()
         {
-            Console.WriteLine("Nada de maneira desengonçada");
+            return "Nada de maneira desengonçada";
         }
     }
 }

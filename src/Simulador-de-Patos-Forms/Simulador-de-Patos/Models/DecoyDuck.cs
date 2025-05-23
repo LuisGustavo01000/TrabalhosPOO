@@ -16,13 +16,13 @@ namespace ProjetoPato.Models
             HabilidadesList.Add("Breaking");
         }
 
-        public void breaking()
+        public string breaking()
         {
-            Console.WriteLine("Ele endurece suas penas como se fosse de madeira");
+            return "Ele endurece suas penas como se fosse de madeira";
         }
-        public void swim()
+        public string swim()
         {
-            Console.WriteLine("Ele nada como se fosse um tronco de uma arvore boiando");
+            return "Ele nada como se fosse um tronco de uma arvore boiando";
         }
 
     }

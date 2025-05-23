@@ -18,14 +18,14 @@ namespace ProjetoPato.Models
             HabilidadesList.Add("Quack");
         }
 
-        public void quack()
+        public string quack()
         {
-            Console.WriteLine("Quack quack quack, um som insuportavel");
+            return "Quack quack quack, um som insuportavel";
         }
 
-        public void swim()
+        public string swim()
         {
-            Console.WriteLine("Ele boia e como um pato de borracha");
+            return "Ele boia e como um pato de borracha";
         }
     }
 }

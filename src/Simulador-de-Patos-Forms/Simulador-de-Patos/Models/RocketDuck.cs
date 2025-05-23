@@ -15,13 +15,13 @@ namespace ProjetoPato.Models
         }
 
 
-        public void fly()
+        public string fly()
         {
-            Console.WriteLine("Parece um foguete no céu");
+            return "Parece um foguete no céu";
         }
-        public void spin()
+        public string spin()
         {
-            Console.WriteLine("Voou tao rapido que ficou tonto");
+            return "Voou tao rapido que ficou tonto";
         }
     }
 }

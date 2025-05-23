@@ -14,3 +14,20 @@ C:\Users\Luiz\Desktop\Simulador-de-Patos\Simulador-de-Patos\obj\Debug\net8.0-win
 C:\Users\Luiz\Desktop\Simulador-de-Patos\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.pdb
 C:\Users\Luiz\Desktop\Simulador-de-Patos\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.genruntimeconfig.cache
 C:\Users\Luiz\Desktop\Simulador-de-Patos\Simulador-de-Patos\obj\Debug\net8.0-windows\ref\Simulador-de-Patos.dll
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\bin\Debug\net8.0-windows\Simulador-de-Patos.exe
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\bin\Debug\net8.0-windows\Simulador-de-Patos.deps.json
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\bin\Debug\net8.0-windows\Simulador-de-Patos.runtimeconfig.json
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\bin\Debug\net8.0-windows\Simulador-de-Patos.dll
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\bin\Debug\net8.0-windows\Simulador-de-Patos.pdb
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador_de_Patos.Form1.resources
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.csproj.GenerateResource.cache
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.AssemblyInfoInputs.cache
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.AssemblyInfo.cs
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.sourcelink.json
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.dll
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\refint\Simulador-de-Patos.dll
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.pdb
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\Simulador-de-Patos.genruntimeconfig.cache
+C:\Users\pablo\Desktop\Github Projects\TrabalhosPOO\src\Simulador-de-Patos-Forms\Simulador-de-Patos\obj\Debug\net8.0-windows\ref\Simulador-de-Patos.dll

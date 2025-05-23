@@ -11,6 +11,16 @@ namespace Simulador_de_Patos
     public partial class Form1 : Form
     {
         private List<string> habilidadesSelecionadas = new();
+        private Duck patoJogador;
+        private Duck patoInimigo;
+        private string tipoJogador;
+        private string tipoInimigo;
+        private int rodadaAtual = 0;
+        private int maxRodadas = 3;
+        private int pontosJogador = 0;
+        private int pontosInimigo = 0;
+        private StringBuilder batalhaCompleta = new();
+        private bool batalhaEmAndamento = false;
 
         public Form1()
         {
@@ -88,26 +98,16 @@ namespace Simulador_de_Patos
             return mapa.ContainsKey(pato) ? mapa[pato] : new List<Button>();
         }
 
-        private void Habilidade_Click(object sender, EventArgs e)
-        {
-            if (sender is Button botao)
-            {
-                habilidadesSelecionadas.Add(botao.Text);
-                textBox1.AppendText($"Habilidade adicionada: {botao.Text}\r\n");
-            }
-        }
-
         private void Iniciar_Click(object sender, EventArgs e)
         {
-            string tipoJogador = comboBox1.SelectedItem?.ToString() ?? "Nenhum";
-            if (tipoJogador == "Nenhum" || habilidadesSelecionadas.Count == 0)
+            tipoJogador = comboBox1.SelectedItem?.ToString() ?? "Nenhum";
+            if (tipoJogador == "Nenhum")
             {
-                MessageBox.Show("Selecione um pato e pelo menos uma habilidade.");
+                MessageBox.Show("Selecione um pato.");
                 return;
             }
 
-            Duck patoJogador = CriarPatoPorTipo(tipoJogador);
-            patoJogador.HabilidadesList.AddRange(habilidadesSelecionadas);
+            patoJogador = CriarPatoPorTipo(tipoJogador);
 
             List<string> tiposPossiveis = new List<string>
             {
@@ -115,50 +115,30 @@ namespace Simulador_de_Patos
                 "Pato de Borracha", "Pato Foguete", "Super Pato",
                 "Pato Filhote", "Pato Tonto", "Pato de Madeira"
             };
+            tiposPossiveis.Remove(tipoJogador);
+
             Random random = new Random();
-            string tipoInimigo = tiposPossiveis[random.Next(tiposPossiveis.Count)];
+            tipoInimigo = tiposPossiveis[random.Next(tiposPossiveis.Count)];
 
             List<Button> botoesHabilidadesInimigo = GetHabilidadesPorPato(tipoInimigo);
             List<string> habilidadesInimigo = botoesHabilidadesInimigo.Select(btn => btn.Text).ToList();
 
-            Duck patoInimigo = CriarPatoPorTipo(tipoInimigo);
+            patoInimigo = CriarPatoPorTipo(tipoInimigo);
             patoInimigo.HabilidadesList.AddRange(habilidadesInimigo);
 
-            int maxRodadas = 3;
-            int rodadaAtual = 0;
-            int pontosJogador = 0;
-            int pontosInimigo = 0;
-
-            StringBuilder batalhaCompleta = new StringBuilder();
-            batalhaCompleta.AppendLine($"In�cio da batalha: {tipoJogador} vs {tipoInimigo}");
+            maxRodadas = 3;
+            rodadaAtual = 0;
+            pontosJogador = 0;
+            pontosInimigo = 0;
+            batalhaCompleta = new StringBuilder();
+            batalhaCompleta.AppendLine($"Início da batalha: {tipoJogador} vs {tipoInimigo}");
             batalhaCompleta.AppendLine(new string('-', 40));
+            batalhaEmAndamento = true;
 
-            foreach (var habJogador in patoJogador.HabilidadesList)
-            {
-                if (rodadaAtual >= maxRodadas || patoInimigo.HabilidadesList.Count == 0)
-                    break;
+            habilidadesSelecionadas.Clear(); 
 
-                string habInimigo = Battle.ObterHabilidadeAleatoria(patoInimigo);
-                string resultadoRodada = Battle.CompararHabilidades(patoJogador, patoInimigo, habJogador, habInimigo);
-
-                batalhaCompleta.AppendLine($"\nRodada {rodadaAtual + 1}");
-                batalhaCompleta.AppendLine($"Jogador: {tipoJogador} - Habilidade: {habJogador}");
-                batalhaCompleta.AppendLine($"Inimigo: {tipoInimigo} - Habilidade: {habInimigo}");
-                batalhaCompleta.AppendLine($"Resultado: {resultadoRodada}");
-                batalhaCompleta.AppendLine(new string('-', 40));
-
-                if (resultadoRodada.Contains("Vit�ria do jogador")) pontosJogador++;
-                else if (resultadoRodada.Contains("Vit�ria do inimigo")) pontosInimigo++;
-
-                rodadaAtual++;
-            }
-
-            string vencedorFinal = pontosJogador > pontosInimigo ? "Jogador venceu a batalha!" :
-                                   pontosInimigo > pontosJogador ? "Inimigo venceu a batalha!" :
-                                   "A batalha terminou empatada!";
-
-            batalhaCompleta.AppendLine($"\nResultado Final: {vencedorFinal}");
             textBox2.Text = batalhaCompleta.ToString();
+            MessageBox.Show("Batalha iniciada! Escolha uma habilidade para a primeira rodada.");
         }
 
         private void Desistir_Click(object sender, EventArgs e)
@@ -171,11 +151,106 @@ namespace Simulador_de_Patos
             textBox1.Clear();
             textBox2.Clear();
             habilidadesSelecionadas.Clear();
+            batalhaEmAndamento = false;
         }
 
         private void Sair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Habilidade_Click(object sender, EventArgs e)
+        {
+            if (sender is Button botao)
+            {
+                string habJogador = botao.Text;
+                string descricao = "";
+
+                if (patoJogador == null)
+                {
+                    var tipo = comboBox1.SelectedItem?.ToString();
+                    if (!string.IsNullOrEmpty(tipo))
+                        patoJogador = CriarPatoPorTipo(tipo);
+                }
+
+                if (patoJogador != null)
+                {
+                    switch (habJogador)
+                    {
+                        case "Fly":
+                            if (patoJogador is Simulador_de_Patos.Interfaces.IFlyable flyable)
+                                descricao = flyable.fly();
+                            break;
+                        case "Swin":
+                            if (patoJogador is Simulador_de_Patos.Interfaces.ISwimable swimable)
+                                descricao = swimable.swim();
+                            break;
+                        case "Quack":
+                            if (patoJogador is Simulador_de_Patos.Interfaces.IQuackable quackable)
+                                descricao = quackable.quack();
+                            break;
+                        case "Spin":
+                            if (patoJogador is Simulador_de_Patos.Interfaces.IDizzy dizzy)
+                                descricao = dizzy.spin();
+                            break;
+                        case "Breaking":
+                            if (patoJogador is Simulador_de_Patos.Interfaces.IBroken broken)
+                                descricao = broken.breaking();
+                            break;
+                        default:
+                            descricao = "Habilidade não implementada.";
+                            break;
+                    }
+                    textBox1.AppendText(descricao + "\r\n");
+                }
+
+                if (!batalhaEmAndamento)
+                {
+                    return;
+                }
+
+                if (!patoJogador.HabilidadesList.Contains(habJogador))
+                    patoJogador.HabilidadesList.Add(habJogador);
+
+                if (!patoJogador.HabilidadesList.Contains(habJogador))
+                {
+                    textBox1.AppendText("Habilidade inválida para este pato.\r\n");
+                    return;
+                }
+                if (rodadaAtual >= maxRodadas)
+                {
+                    textBox1.AppendText("A batalha já terminou.\r\n");
+                    return;
+                }
+
+                string habInimigo = Battle.ObterHabilidadeAleatoria(patoInimigo);
+                string resultadoRodada = Battle.CompararHabilidades(patoJogador, patoInimigo, habJogador, habInimigo);
+
+                batalhaCompleta.AppendLine($"\nRodada {rodadaAtual + 1}");
+                batalhaCompleta.AppendLine($"Jogador: {tipoJogador} - Habilidade: {habJogador}");
+                batalhaCompleta.AppendLine($"Inimigo: {tipoInimigo} - Habilidade: {habInimigo}");
+                batalhaCompleta.AppendLine($"Resultado: {resultadoRodada}");
+                batalhaCompleta.AppendLine(new string('-', 40));
+
+                if (resultadoRodada.Contains("Vitória do jogador")) pontosJogador++;
+                else if (resultadoRodada.Contains("Vitória do inimigo")) pontosInimigo++;
+
+                rodadaAtual++;
+
+                if (rodadaAtual >= maxRodadas)
+                {
+                    string vencedorFinal = pontosJogador > pontosInimigo ? "Jogador venceu a batalha!" :
+                                           pontosInimigo > pontosJogador ? "Inimigo venceu a batalha!" :
+                                           "A batalha terminou empatada!";
+                    batalhaCompleta.AppendLine($"\nResultado Final: {vencedorFinal}");
+                    batalhaEmAndamento = false;
+                }
+                else
+                {
+                    MessageBox.Show("Selecione outra habilidade para a próxima rodada.");
+                }
+                textBox2.Text = batalhaCompleta.ToString();
+            }
         }
     }
 }

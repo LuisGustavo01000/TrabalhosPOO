@@ -18,19 +18,19 @@ namespace ProjetoPato.Models
             HabilidadesList.Add("Quack");
         }
 
-        public void fly()
+        public string fly()
         {
-            Console.WriteLine("Voa de uma maneira estranha mas muito rapida");
+            return "Voa de uma maneira estranha mas muito rapida";
         }
         
-        public void quack()
+        public string quack()
         {
-            Console.WriteLine("Um quaaaaack que voce escuta ao adentrar uma floresta");
+            return "Um quaaaaack que voce escuta ao adentrar uma floresta";
         }
        
-        public void swim()
+        public string swim()
         {
-            Console.WriteLine("Nada sem rumo mas muito rapido");
+            return "Nada sem rumo mas muito rapido";
         }
     }
 }

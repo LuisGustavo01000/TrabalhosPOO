@@ -16,13 +16,13 @@ namespace ProjetoPato.Models
         }
 
 
-        public void quack()
+        public string quack()
         {
-            Console.WriteLine("QuaAaAaCK ele grita girando");
+            return "QuaAaAaCK ele grita girando";
         }
-        public void spin()
+        public string spin()
         {
-            Console.WriteLine("Rodando e dando soco para todo lado");
+            return "Rodando e dando soco para todo lado";
         }
     }
 }
