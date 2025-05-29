@@ -13,3 +13,11 @@ C:\Users\1524716\Downloads\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\refint\Try
 C:\Users\1524716\Downloads\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.pdb
 C:\Users\1524716\Downloads\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.genruntimeconfig.cache
 C:\Users\1524716\Downloads\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\ref\TryCatch.dll
+C:\Users\thiia\Desktop\Atividade_Poo\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thiia\Desktop\Atividade_Poo\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.AssemblyInfoInputs.cache
+C:\Users\thiia\Desktop\Atividade_Poo\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.AssemblyInfo.cs
+C:\Users\thiia\Desktop\Atividade_Poo\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.csproj.CoreCompileInputs.cache
+C:\Users\thiia\Desktop\Atividade_Poo\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.sourcelink.json
+C:\Users\thiia\Desktop\Atividade_Poo\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.dll
+C:\Users\thiia\Desktop\Atividade_Poo\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\refint\TryCatch.dll
+C:\Users\thiia\Desktop\Atividade_Poo\TrabalhosPOO\src\TryCatch\obj\Debug\net9.0\TryCatch.pdb

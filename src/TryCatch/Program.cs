@@ -1,11 +1,12 @@
-﻿namespace TryCatch;
+﻿using TryCatch.Ex02;
 
-using TryCatch.Ex01;
-
-class Program
+namespace TryCatch
 {
-    static void Main(string[] args)
+    class Program
     {
-        Ex01.Executar(); // Agora chamará o método correto
+        static void Main(string[] args)
+        {
+            Ex02.Executar(); // chama corretamente a classe e método
+        }
     }
 }
