@@ -57,9 +57,16 @@ namespace TryCatch.Ex04
                 Console.WriteLine("Nenhum número válido foi somado.");
             }
         }
+        private static void VerificarSoma(double somaAtual, double proximoNumero)
+        {
+            if (somaAtual + proximoNumero > 100)
+            {
+                throw new ExcecaoAcimaDeCem($"Erro: A soma total ({somaAtual + proximoNumero}) ultrapassa 100.");
+            }
+        }
 
-       
-       
-       
+
+
+
     }
 }
