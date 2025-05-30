@@ -1,6 +1,7 @@
 ﻿using TryCatch.Ex01;
 using TryCatch.Ex02;
 using TryCatch.Ex03;
+using TryCatch.Ex04;
 
 namespace TryCatch
 {
@@ -14,6 +15,7 @@ namespace TryCatch
                 Console.WriteLine("1 - Exercício 1");
                 Console.WriteLine("2 - Exercício 2");
                 Console.WriteLine("3 - Exercício 3");
+                Console.WriteLine("4 - Exercício 4");
                 Console.WriteLine("0 - Sair");
                 Console.Write("Opção: ");
                 string opcao = Console.ReadLine();
@@ -30,6 +32,9 @@ namespace TryCatch
                             break;
                         case "3":
                             TryCatch.Ex03.Ex03.Executar();
+                            break;
+                        case "4":
+                            TryCatch.Ex04.Ex04.Executar();
                             break;
                         case "0":
                             Console.WriteLine("Saindo...");
