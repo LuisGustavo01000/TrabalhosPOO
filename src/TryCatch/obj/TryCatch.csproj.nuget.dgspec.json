@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thiia\\Desktop\\Atividade_Poo\\TrabalhosPOO\\src\\TryCatch\\TryCatch.csproj": {}
+    "C:\\Users\\pablo\\Desktop\\Github Projects\\TrabalhosPOO\\src\\TryCatch\\TryCatch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thiia\\Desktop\\Atividade_Poo\\TrabalhosPOO\\src\\TryCatch\\TryCatch.csproj": {
+    "C:\\Users\\pablo\\Desktop\\Github Projects\\TrabalhosPOO\\src\\TryCatch\\TryCatch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thiia\\Desktop\\Atividade_Poo\\TrabalhosPOO\\src\\TryCatch\\TryCatch.csproj",
+        "projectUniqueName": "C:\\Users\\pablo\\Desktop\\Github Projects\\TrabalhosPOO\\src\\TryCatch\\TryCatch.csproj",
         "projectName": "TryCatch",
-        "projectPath": "C:\\Users\\thiia\\Desktop\\Atividade_Poo\\TrabalhosPOO\\src\\TryCatch\\TryCatch.csproj",
-        "packagesPath": "C:\\Users\\thiia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thiia\\Desktop\\Atividade_Poo\\TrabalhosPOO\\src\\TryCatch\\obj\\",
+        "projectPath": "C:\\Users\\pablo\\Desktop\\Github Projects\\TrabalhosPOO\\src\\TryCatch\\TryCatch.csproj",
+        "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pablo\\Desktop\\Github Projects\\TrabalhosPOO\\src\\TryCatch\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\thiia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

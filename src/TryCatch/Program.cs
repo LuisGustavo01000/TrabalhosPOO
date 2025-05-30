@@ -1,4 +1,5 @@
-﻿using TryCatch.Ex02;
+﻿using TryCatch.Ex01;
+using TryCatch.Ex02;
 
 namespace TryCatch
 {
@@ -6,7 +7,40 @@ namespace TryCatch
     {
         static void Main(string[] args)
         {
-            Ex02.Executar(); // chama corretamente a classe e método
+            while (true)
+            {
+                Console.WriteLine("Escolha o exercício para rodar:");
+                Console.WriteLine("1 - Exercício 1");
+                Console.WriteLine("2 - Exercício 2");
+                Console.WriteLine("0 - Sair");
+                Console.Write("Opção: ");
+                string opcao = Console.ReadLine();
+
+                try
+                {
+                    switch (opcao)
+                    {
+                        case "1":
+                            TryCatch.Ex01.Ex01.Executar();
+                            break;
+                        case "2":
+                            TryCatch.Ex02.Ex02.Executar();
+                            break;
+                        case "0":
+                            Console.WriteLine("Saindo...");
+                            return;
+                        default:
+                            Console.WriteLine("Opção inválida. Tente novamente.");
+                            break;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"erro: {ex.Message}");
+                }
+                Console.WriteLine(); 
+            }
+             
         }
     }
 }

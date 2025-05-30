@@ -5,8 +5,15 @@ public static class Ex01
     public static void Executar()
     {
         int numero = LerInteiro();
-        Console.WriteLine($"O número escolhido foi: {numero}");
-        // Console.WriteLine($"É primo: {NumeroPrimo(numero)}");
+
+        if (NumeroPrimo(numero))
+        {
+            Console.WriteLine($"O número {numero} é primo.");
+        }
+        else
+        {
+            Console.WriteLine($"O número {numero} não é primo.");
+        }
     }
 
     public static int LerInteiro()
@@ -38,13 +45,14 @@ public static class Ex01
         }
     }
 
-    // public static bool NumeroPrimo(int numero)
-    // {
-    //     if (numero <= 1) return false;
-    //     for (int i = 2; i < numero; i++)
-    //     {
-    //         if (numero % i == 0) return false;
-    //     }
-    //     return true;
-    // }
+    public static bool NumeroPrimo(int numero)
+    {
+        if (numero <= 1)
+            throw new ArgumentException("O número deve ser maior que 1.");
+        for (int i = 2; i < numero; i++)
+        {
+            if (numero % i == 0) return false;
+        }
+        return true;
+    }
 }
