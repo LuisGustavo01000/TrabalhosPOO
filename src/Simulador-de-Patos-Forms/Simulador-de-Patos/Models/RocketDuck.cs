@@ -19,10 +19,7 @@ namespace ProjetoPato.Models
         {
             return "Parece um foguete no céu";
         }
-        public string spin()
-        {
-            return "Voou tao rapido que ficou tonto";
-        }
+      
     }
 }
 

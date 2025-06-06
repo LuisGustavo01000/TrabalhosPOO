@@ -1,7 +1,8 @@
 using Simulador_de_Patos.Models;
 using System.Text;
+using System.Collections.Generic;
 
-public static class Battle 
+public class Battle
 {
     private static readonly Dictionary<string, int> ForcaHabilidades = new()
     {
@@ -12,22 +13,25 @@ public static class Battle
         ["Breaking"] = 5
     };
 
-    public static string ObterHabilidadeAleatoria(Duck pato)
+    public string ObterHabilidadeAleatoria(Duck pato)
     {
+        if (pato.HabilidadesList == null || pato.HabilidadesList.Count == 0)
+            return string.Empty;
+
         Random random = new Random();
         int index = random.Next(pato.HabilidadesList.Count);
         return pato.HabilidadesList[index];
     }
 
-    public static string CompararHabilidades(Duck patoJogador, Duck patoInimigo, string habJogador, string habInimigo)
+    public string CompararHabilidades(Duck patoJogador, Duck patoInimigo, string habJogador, string habInimigo)
     {
         StringBuilder resultado = new StringBuilder();
 
         resultado.AppendLine($"Jogador: {patoJogador.Tipo} - Habilidade: {habJogador}");
         resultado.AppendLine($"Inimigo: {patoInimigo.Tipo} - Habilidade: {habInimigo}");
 
-        int forcaJogador = ForcaHabilidades.ContainsKey(habJogador) ? ForcaHabilidades[habJogador] : 0;
-        int forcaInimigo = ForcaHabilidades.ContainsKey(habInimigo) ? ForcaHabilidades[habInimigo] : 0;
+        int forcaJogador = ForcaHabilidades.TryGetValue(habJogador, out int fj) ? fj : 0;
+        int forcaInimigo = ForcaHabilidades.TryGetValue(habInimigo, out int fi) ? fi : 0;
 
         if (forcaJogador == forcaInimigo)
         {
