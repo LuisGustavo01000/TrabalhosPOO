@@ -152,9 +152,9 @@ public static Duck CriarPato(string tipo, int id) {
 
 ### Experiências e Aprendizados
 
-No começo foi meio trabalhoso, desde quando a atividade era sobre fazer em console application eu já estava tentando aplicar os padrões para a aplicação ficar mais modular, pois é algo que venho tentando fazer nos projetos de Trabalho Interdisciplinar porque lá direto eu ficava perdido nas pastas e arquivos. Então pesquisei qual era o padrão para dividir onde colocar cada coisa no sistema. No começo demorou para eu conseguir fazer todas as pastas e arquivos nos lugares certos e deu muito problema em usar uma coisa de outro arquivo e tal, mas quando o escopo da aplicação mudou e foi para Forms eu vi que o trabalho deu bom, pois foi mais fácil pegar cada coisinha e só ir colocando no Forms.
+No início, foi desafiador organizar o projeto e aplicar padrões, especialmente ao estruturar pastas e arquivos. Tivemos dificuldades com dependências entre arquivos, mas, ao migrar para Forms, a organização prévia facilitou bastante a adaptação e integração dos componentes, fora que se precisarmos alterar ou mudar algo agora fazemos isso com bastante facilidade sem comprometer o que ja foi feito.
 
-Usar SOLID e Design Patterns foi importante para:
+### Usar SOLID e Design Patterns foi importante para:
 
 - Deixar o código mais organizado e fácil de entender.
 - Facilitar a manutenção e a adição de novas funcionalidades.
