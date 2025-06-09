@@ -31,16 +31,32 @@ Permitir que o jogador escolha um pato com habilidades únicas para enfrentar um
 
 ---
 
+## Diagrama de Classe
+
+O projeto utiliza uma arquitetura baseada em herança, interfaces e princípios SOLID para garantir modularidade e flexibilidade. Veja abaixo o diagrama de classes UML que representa a estrutura principal do simulador:
+
+![Diagrama de Classe](src/DiagramaUML.png)
+
 ## 📁 Estrutura de Pastas
 
 ```plaintext
 /TrabalhosPOO/
-├── /src/                  # Código-fonte do jogo
-│   ├── Program.cs         # Ponto de entrada
-│   ├── /Models/           # Classes dos patos
-│   ├── /Interfaces/       # Interfaces de habilidades
-│   └── /Services/         # Lógica do jogo (menus, batalha, etc)
-├── README.md              # Este arquivo
+├── /src/
+│   ├── README.md                # Documentação detalhada do projeto
+│   ├── DiagramaUML.png          # Imagem do diagrama de classes
+│   ├── /Simulador-de-Patos-Forms/
+│   │   ├── README_SOLID_DESIGN.md   # Análise SOLID e Design Patterns
+│   │   ├── /Simulador-de-Patos/
+│   │   │   ├── /Models/         # Classes dos patos (ex: Duck, DizzyDuck...)
+│   │   │   ├── /Interfaces/     # Interfaces de habilidades (ex: IQuackable...)
+│   │   │   ├── /Services/       # Lógica do jogo (menus, fábrica, batalha)
+│   │   │   └── ...
+│   └── /SimuladorDePatos/       # Versão console do simulador
+│       ├── /Models/
+│       ├── /Interfaces/
+│       ├── /Services/
+│       └── ...
+├── README.md                    # Este arquivo (resumo geral)
 └── .gitignore
 ```
 
@@ -50,7 +66,7 @@ Permitir que o jogador escolha um pato com habilidades únicas para enfrentar um
 
 - [x] Estrutura base com herança e interfaces
 - [x] Exibição de lista de patos e habilidades
-- [x] Sistema de batalha 
+- [x] Sistema de batalha
 - [x] Definir campeão de acordo com Habilidade
 
 ---
@@ -75,4 +91,3 @@ git clone https://github.com/LuisGustavo01000/TrabalhosPOO.git
 cd TrabalhosPOO/src/SimuladorDePatos
 dotnet run
 ```
-
