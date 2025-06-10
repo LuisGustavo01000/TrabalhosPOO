@@ -42,7 +42,7 @@ public static class DuckFactory
 
 O OCP diz que as classes devem ser abertas para extensão, mas fechadas para modificação.
 
-- **Está aplicado?** Sim
+- **Está aplicado?** Parcial
 - **Exemplo:** O método `CriarPato` em [`DuckFactory`](Simulador-de-Patos-Forms/Simulador-de-Patos/Services/DuckFactory.cs) permite adicionar novos tipos de patos.
 
 ```csharp
