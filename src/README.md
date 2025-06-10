@@ -173,4 +173,4 @@ No início, foi desafiador organizar o projeto e aplicar padrões, especialmente
 ### Melhorias Futuras
 
 - Aplicar corretamente o DIP (Dependency Inversion Principle).
-- Implementar Observer e Singleton para gerenciar melhor o combate dos patos.
+- Implementar Observer para gerenciar melhor o combate dos patos.
