@@ -86,8 +86,31 @@ Projeto criado por Luis Gustavo, Pablo Marques e Thiago Guilherme para a discipl
 
 ## ▶️ Como Executar
 
+### Executando a versão Console
+
 ```bash
 git clone https://github.com/LuisGustavo01000/TrabalhosPOO.git
 cd TrabalhosPOO/src/SimuladorDePatos
 dotnet run
 ```
+
+---
+
+### Executando a versão Windows Forms
+
+> **Pré-requisito:** É necessário ter o SDK do .NET 8.0 e o Windows instalado.
+
+1. Abra o Visual Studio (recomendado) ou VS Code.
+2. Navegue até a pasta `src/Simulador-de-Patos-Forms/Simulador-de-Patos`.
+3. No Visual Studio, abra o arquivo de solução `Simulador-de-Patos.sln` e defina o projeto `Simulador-de-Patos` como projeto de inicialização. Clique em **Iniciar** (F5) para rodar a aplicação gráfica.
+
+   **Ou pelo terminal:**
+
+   ```bash
+   cd src/Simulador-de-Patos-Forms/Simulador-de-Patos
+   dotnet run
+   ```
+
+---
+
+Assim, você pode demonstrar tanto a versão console quanto a versão com interface gráfica (Windows Forms) do simulador de patos no seu currículo!
